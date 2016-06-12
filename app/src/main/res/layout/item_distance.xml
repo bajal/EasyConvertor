@@ -10,7 +10,8 @@
         android:id="@+id/mphkmph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
         android:paddingTop="8dp"
         android:text="@string/milestokm"
         android:textSize="20sp"
@@ -28,7 +29,6 @@
 
         <EditText
             android:id="@+id/mph"
-            android:hint="Miles per Hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
@@ -46,7 +46,6 @@
 
         <EditText
             android:id="@+id/kmph"
-            android:hint="Kilomiters per hour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"

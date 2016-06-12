@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/card_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weight" />
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:paddingTop="8dp"
+        android:text="@string/lbtokg"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start">>
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/pounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" >
+        </EditText>
+
+        <!-- Use a vector image -->
+        <ImageView
+            android:id="@+id/list_avatar"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_convert" />
+
+        <EditText
+            android:id="@+id/kilograms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" />
+    </LinearLayout>
+
 </LinearLayout>

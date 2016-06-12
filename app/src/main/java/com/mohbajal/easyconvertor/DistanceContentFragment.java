@@ -37,4 +37,10 @@ public class DistanceContentFragment extends Fragment {
             kmph.setText(Conversions.mphToKmph(mph.getText().toString()));
     }
 
+    @OnTextChanged(R.id.kmph)
+    void convertMphToKmph(){
+        if(kmph.isFocused())
+            mph.setText(Conversions.kmphToMph(kmph.getText().toString()));
+    }
+
 }
