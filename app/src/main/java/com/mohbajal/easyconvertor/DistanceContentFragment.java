@@ -20,7 +20,10 @@ public class DistanceContentFragment extends Fragment {
 
     @BindView(R.id.kmph) EditText kmph;
     @BindView(R.id.mph) EditText mph;
-    @BindView((R.id.mphkmph)) TextView mphkmph;
+
+    @BindView(R.id.miles) EditText miles;
+    @BindView(R.id.kilometers) EditText kms;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,6 +44,18 @@ public class DistanceContentFragment extends Fragment {
     void convertMphToKmph(){
         if(kmph.isFocused())
             mph.setText(Conversions.kmphToMph(kmph.getText().toString()));
+    }
+
+    @OnTextChanged(R.id.kilometers)
+    void convertKmToMiles(){
+        if(kms.isFocused())
+            miles.setText(Conversions.kmtoMiles(kms.getText().toString()));
+    }
+
+    @OnTextChanged(R.id.miles)
+    void convertMilesToKmp(){
+        if(miles.isFocused())
+            kms.setText(Conversions.milesToKm(miles.getText().toString()));
     }
 
 }

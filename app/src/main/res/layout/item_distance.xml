@@ -11,11 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:textStyle="italic"
+        android:textStyle="bold"
         android:paddingTop="8dp"
-        android:text="@string/milestokm"
+        android:text="@string/mphtokmph"
         android:textSize="20sp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textAlignment="viewStart"
         android:layout_gravity="start">>
     </TextView>
@@ -38,7 +38,6 @@
 
         <!-- Use a vector image -->
         <ImageView
-            android:id="@+id/list_avatar"
             android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
             android:scaleType="centerCrop"
@@ -53,5 +52,51 @@
             android:width="120dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:text="@string/milestokm"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start">>
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" >
+        </EditText>
+
+        <!-- Use a vector image -->
+        <ImageView
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_convert" />
+
+        <EditText
+            android:id="@+id/kilometers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" />
+    </LinearLayout>
+
 
 </LinearLayout>

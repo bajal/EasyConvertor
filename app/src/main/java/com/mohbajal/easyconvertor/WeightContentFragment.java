@@ -17,6 +17,7 @@ import butterknife.OnTextChanged;
 public class WeightContentFragment extends Fragment {
 
     @BindView(R.id.pounds)   EditText lb;
+    @BindView(R.id.ounces) EditText oz;
     @BindView(R.id.kilograms) EditText kg;
 
     @Override
@@ -31,7 +32,15 @@ public class WeightContentFragment extends Fragment {
     @OnTextChanged(R.id.pounds)
     void convertLbToKg(){
         if(lb.isFocused())
-            kg.setText(Conversions.poundsToKg(lb.getText().toString()));
+            kg.setText(Conversions.poundsToKg(lb.getText().toString(),
+                    oz.getText().toString().equals("")?"0":oz.getText().toString() ));
+    }
+
+    @OnTextChanged(R.id.ounces)
+    void convertOzToKg(){
+        if(oz.isFocused())
+            kg.setText(Conversions.poundsToKg(lb.getText().toString(),
+                    oz.getText().toString().equals("")?"0":oz.getText().toString()));
     }
 
     @OnTextChanged(R.id.kilograms)

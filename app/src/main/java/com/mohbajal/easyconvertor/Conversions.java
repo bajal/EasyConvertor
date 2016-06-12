@@ -45,9 +45,12 @@ public class Conversions {
 	}
 
 	//
-	public static String poundsToKg(String pounds) {
+	public static String poundsToKg(String pounds, String ounces) {
 		if(pounds.equalsIgnoreCase("")) return "";
 		float f = (float) (Float.parseFloat(pounds) * 0.453592);
+        if(!"0".equalsIgnoreCase(ounces)) {
+            f += Float.parseFloat(ounces)*0.0283495;
+        }
 		return df.format(f);
 	}
 

@@ -8,10 +8,10 @@
     <string name="left">&#8592;</string>
     <string name="clear">Clear</string>
 
-    <string name="ftoc">Fahrenheit --  Celsius</string>
-    <string name="milestokm">Miles -- Kms</string>
-    <string name="lbtokg">Pounds (lb) -- Kgs</string>
-    <string name="ltog">Gallons (US) -- Liters </string>
-    <string name="mgptokmpl">MPG -- Kms/L</string>
-    <string name="mphtokmph">Miles/hr -- Kms/hr</string>
+    <string name="ftoc">Fahrenheit -  Celsius</string>
+    <string name="milestokm">Miles - Kms</string>
+    <string name="lbtokg">Pounds Oz - Kgs</string>
+    <string name="ltog">Gallons (US) - Liters </string>
+    <string name="mgptokmpl">MPG - Kms/L</string>
+    <string name="mphtokmph">Miles/hr - Kms/hr</string>
 </resources>

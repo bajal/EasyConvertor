@@ -10,11 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:textStyle="italic"
+        android:textStyle="bold"
         android:paddingTop="8dp"
         android:text="@string/ftoc"
         android:textSize="20sp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textAlignment="viewStart"
         android:layout_gravity="start">>
     </TextView>
