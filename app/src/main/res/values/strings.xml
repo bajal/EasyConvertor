@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EasyConvertor</string>
+    <string name="leftright"><![CDATA[<->]]></string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="right">&#8594;</string>
+    <string name="left">&#8592;</string>
+    <string name="clear">Clear</string>
+
+    <string name="ftoc">Fahrenheit --  Celsius</string>
+    <string name="milestokm">Miles -- Kms</string>
+    <string name="lbtokg">Pounds (lb) -- Kgs</string>
+    <string name="ltog">Gallons (US) -- Liters </string>
+    <string name="mgptokmpl">MPG -- Kms/L</string>
+    <string name="mphtokmph">Miles/hr -- Kms/hr</string>
+</resources>

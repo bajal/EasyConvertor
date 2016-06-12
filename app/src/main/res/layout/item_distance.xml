@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mphkmph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingTop="8dp"
+        android:text="@string/milestokm"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start">>
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/mph"
+            android:hint="Miles per Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" >
+        </EditText>
+
+        <!-- Use a vector image -->
+        <ImageView
+            android:id="@+id/list_avatar"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_convert" />
+
+        <EditText
+            android:id="@+id/kmph"
+            android:hint="Kilomiters per hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:width="120dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
